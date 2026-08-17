@@ -76,13 +76,14 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
 .nav-links a {
   font-size: 16px;
   color: var(--muted);
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .nav-links a:hover {
