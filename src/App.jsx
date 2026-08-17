@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -690,30 +691,7 @@ function App() {
         </div>
 
       </section>
-
-
-      {/* FOOTER */}
-      <footer>
-
-        <div className="footer-container">
-
-          <div>
-            © {new Date().getFullYear()}
-            {" "}
-            Eshiwani Michael
-          </div>
-
-          <div>
-            Nairobi, Kenya
-          </div>
-
-          <div>
-            Built with React
-          </div>
-
-        </div>
-
-      </footer>
+      <Footer />  
 
     </div>
   );
