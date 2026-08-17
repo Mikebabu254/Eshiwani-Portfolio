@@ -1,43 +1,14 @@
 import React, { useState } from "react";
 import "./index.css";
 import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  
 
   return (
     <div className="portfolio">
-
-      {/* NAVBAR */}
-      <header className="navbar">
-        <div className="nav-container">
-
-          <a href="#home" className="logo" onClick={closeMenu}>
-            ESHIWANI<span>.</span>
-          </a>
-
-          <button
-            className="menu-button"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? "✕" : "☰"}
-          </button>
-
-          <nav className={menuOpen ? "nav-links open" : "nav-links"}>
-            <a href="#home" onClick={closeMenu}>Home</a>
-            <a href="#about" onClick={closeMenu}>About</a>
-            <a href="#services" onClick={closeMenu}>Services</a>
-            <a href="#work" onClick={closeMenu}>Work</a>
-            <a href="#skills" onClick={closeMenu}>Skills</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
-          </nav>
-
-        </div>
-      </header>
+      <NavBar/>
 
 
       {/* HERO */}
