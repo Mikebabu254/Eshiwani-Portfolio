@@ -80,13 +80,15 @@ button {
 }
 
 .nav-links a {
-  font-size: 12px;
+  font-size: 16px;
   color: var(--muted);
   transition: 0.2s;
 }
 
 .nav-links a:hover {
   color: white;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .menu-button {
@@ -94,7 +96,7 @@ button {
   background: transparent;
   border: none;
   color: white;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 
