@@ -8,10 +8,9 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Skills from "./components/Skills";
 import Creative from "./components/Creative";
+import Contact from "./components/Contact";
 
 function App() {
-  
-
   return (
     <div className="portfolio">
       <NavBar/>
@@ -21,43 +20,8 @@ function App() {
       <Work/>
       <Skills/>
       <Creative/>
-
-
-      {/* CONTACT */}
-      <section id="contact" className="contact-section">
-
-        <div className="container">
-
-          <div className="contact-box">
-
-            <p className="section-label">
-              06 — CONTACT
-            </p>
-
-            <h2>
-              Let's build something
-              <span>great together.</span>
-            </h2>
-
-            <p>
-              Have an idea for a website, application
-              or business system? Let's discuss it.
-            </p>
-
-            <a
-              href="mailto:your-email@example.com"
-              className="button primary"
-            >
-              Start a conversation →
-            </a>
-
-          </div>
-
-        </div>
-
-      </section>
+      <Contact/>
       <Footer />  
-
     </div>
   );
 }
